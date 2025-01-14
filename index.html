@@ -1,33 +1,57 @@
 ---
 layout: default
 ---
-<h1 class="text-center my-2">What's new ?</h1>
-<div class="container">
-  <div>
-    {% for post in site.data.posts.posts %}
-      <article class="text-black my-2 mt-3 d-flex flex-column justify-content-center align-items-center w-80">
-        <h3 class="text-center">
-          <a href="{{ post.url }}" class="text-black">
-            <p class="mb-2">{{ post.title }}</p>
-            <img src="{{ '/assets/img/posts/' | append: post.bg-image | relative_url }}">
-          </a>
-        </h3>
-        <p class="post-meta">
-          <em><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></em>
-        </p>
-        <div class="d-flex align-items-center w-80">
-          {{ post.description }}
+<div class="row gap-2 w-100 justify-content-between">
+  <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+    <p><img class="profile-picture" src="/assets/img/picture_profile_alexis.jpg" alt="profile picture" width="180" /></p>
+    <h1 class="text-center my-2">Welcome to my blog</h1>
+    <p class="text-center">
+      My name is Alexis Crozier, and I am a junior developer specializing in Ruby on Rails and Hotwire.
+
+      <br/>
+
+      Currently undergoing a career change, I am pursuing an apprenticeship to deepen my skills and contribute to innovative projects.
+
+      <br/>
+
+      Passionate about technology, I enjoy exploring its many facets and constantly discovering new approaches. I co-founded CasaVin, a project initially developed as part of my academic curriculum, which is now in production.
+
+      <br/>
+
+      Outside of coding, I am an avid traveler who enjoys hiking, climbing, and running. I also dedicate time to photography, another one of my passions.
+    </p>
+  </div>
+
+  <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+    <h2 class="text-center my-2">What's new ?</h2>
+    <div class="container">
+      <div>
+        {% for post in site.data.posts.posts %}
+          <article class="text-black my-2 mt-3 d-flex flex-column justify-content-center align-items-center w-80">
+            <h3 class="text-center">
+              <a href="{{ post.url }}" class="text-black">
+                <p class="mb-2">{{ post.title }}</p>
+                <img src="{{ '/assets/img/posts/' | append: post.bg-image | relative_url }}">
+              </a>
+            </h3>
+            <p class="post-meta">
+              <em><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></em>
+            </p>
+            <div class="d-flex align-items-center w-80">
+              {{ post.description }}
+            </div>
+          </article>
+        {% endfor %}
+    <!--
+        <div class="content-wrapper">
+          &lt;!&ndash; Pagination links &ndash;&gt;
+          <div class="d-flex justify-content-center align-items-center w-80">
+              <span class="pagination-button">Previous</span>
+              <span class="pagination-button">Next</span>
+          </div>
         </div>
-      </article>
-    {% endfor %}
-<!--
-    <div class="content-wrapper">
-      &lt;!&ndash; Pagination links &ndash;&gt;
-      <div class="d-flex justify-content-center align-items-center w-80">
-          <span class="pagination-button">Previous</span>
-          <span class="pagination-button">Next</span>
+    -->
       </div>
     </div>
--->
   </div>
 </div>

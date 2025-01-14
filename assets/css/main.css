@@ -274,8 +274,9 @@ pre code {
 
 .site-header {
   min-height: 56px;
-  width: 1100px;
-  position: fixed;
+  width: 100%;
+  position: relative;
+  left: 0;
   background-color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
