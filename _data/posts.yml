@@ -1,0 +1,6 @@
+posts:
+  - title: "Optimizing lazy loading in Rails with Hotwire"
+    date: "2024-11-19"
+    description: "How Hotwire simplify the implementation of lazy loading in Rails."
+    bg-image: "lazyload-hotwire.png"
+    url: "/optimizing-lazy-loading-in-rails-with-hotwire"
