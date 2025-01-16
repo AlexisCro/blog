@@ -1,10 +1,10 @@
 <header class="site-header text-dark w-100">
   <h3 class="site-title">
-    <a href="{{ site.github.url }}/">{{ site.title }}</a>
+    <a href="{{ '/' | site.github.url | append: 'blog' }}/">{{ site.title }}</a>
   </h3>
   <nav class="menu-list">
     {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.url | relative_url }}" class="menu-link">{{ item.name }}</a>
+      <a href="{{ site.github.url | append: item.url }}" class="menu-link">{{ item.name }}</a>
     {% endfor %}
     {% for item in site.data.settings.social %}
       <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
