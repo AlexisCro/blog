@@ -39,7 +39,7 @@ In summary, lazy loading helps prevent resource overload by limiting expensive o
 thereby enhancing application performance and responsiveness.
 
 ## 3. How to Implement Lazy Loading (without Hotwire)
-![js header]("{{ '/assets/img/posts/js-header.png' | relative_url }}")
+![js header]({{ '/assets/img/posts/js-header.png' | relative_url }})
 
 Lazy loading can be implemented in JavaScript using techniques like IntersectionObserver to detect when an element becomes visible in the viewport, 
 and the fetch API to retrieve data as needed. 
@@ -229,7 +229,7 @@ This ensures that the content loads into the correct container in our view.
 <% end %>
 ```
 
-![gif]("{{ '/assets/img/posts/awesome.gif' | relative_url }}")
+![gif]({{ '/assets/img/posts/awesome.gif' | relative_url }})
 
 <hr/>
 
