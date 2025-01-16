@@ -28,7 +28,7 @@ In a traditional client-server exchange, the client typically sends an HTTP requ
 
 Once the connection is established, it remains open, allowing the server to push updates to the client without requiring additional requests from the client. 
 
-![WebSocket](/assets/images/posts/broadcasting/websocket-schema.png)
+![WebSocket]({{ '/assets/img/posts/broadcasting/websocket-schema.png' | relative_url }})
 
 ## 3. Implementing Broadcasts with Hotwire
 **Hotwire** significantly simplifies the code and setup needed for implementing broadcasts.
@@ -66,7 +66,7 @@ def update
 end
 ```
 
-![magic gif](/assets/img/posts/broadcasting/magic.gif)
+![magic gif]({{ '/assets/img/posts/broadcasting/magic.gif' | relative_url }})
 
 And that's it :rocket: ! The magic of **Hotwire** takes care of the rest.
 
@@ -76,11 +76,11 @@ And that's it :rocket: ! The magic of **Hotwire** takes care of the rest.
 Hotwire might seem magical at first glance, but let’s break down what’s actually happening.
 
 - **WebSocket Registration** When the view is loaded, a WebSocket connection is opened and registered between the client (browser, tab) and the server.
-![WebSocket Registration](/assets/img/posts/broadcasting/open-websocket.png)
+![WebSocket Registration]({{ '/assets/img/posts/broadcasting/open-websocket.png' | relative_url }})
 
 - **Identifying the Target** In the view, we specify which component Hotwire should update when an event triggers a change in the model.
 - **Updating via Turbo Stream** When an update occurs on the object (via after_update_commit), the server sends a response in the form of a Turbo Stream through ActionCable. This response contains the necessary data to dynamically update the client’s DOM.
-![Return of ActionCable](/assets/img/posts/broadcasting/return-actioncable.png)
+![Return of ActionCable]({{ '/assets/img/posts/broadcasting/return-actioncable.png' | relative_url }})
 
 ## 5. Conclusion
 

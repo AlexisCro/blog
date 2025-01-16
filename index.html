@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="row w-100 justify-content-between">
   <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
-    <p><img class="profile-picture" src="/assets/img/picture_profile_alexis.jpg" alt="profile picture" width="180" /></p>
+    <p><img class="profile-picture" src="{{ '/assets/img/picture_profile_alexis.jpg' | relative_url }}" alt="profile picture" width="180" /></p>
     <h1 class="text-center my-2">Welcome to my blog</h1>
     <p class="text-center">
       My name is Alexis Crozier, and I am a junior developer specializing in Ruby on Rails and Hotwire.
@@ -29,7 +29,7 @@ layout: default
         {% for post in site.data.posts.posts %}
           <article class="text-black mb-4 mt-3 card p-2 d-flex flex-column justify-content-center align-items-center w-80">
             <h3 class="text-center">
-              <a href="{{ post.url }}" class="text-black">
+              <a href="{{ post.url | relative_url }}" class="text-black">
                 <p class="mb-2 px-3 text-wrap">{{ post.title }}</p>
                 <img class="w-100" src="{{ '/assets/img/posts/' | append: post.bg-image | relative_url }}">
               </a>
