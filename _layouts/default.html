@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
   {% include header/head.html %}
-  <body style="width: 75vw;" class="mx-auto">
-    <div class="container">
+  <body class="mx-auto w-100">
+    <div class="container p-0">
       {% include header.html %}
-      <div class="content-wrapper w-100">
+      <div class="content-wrapper w-100 d-flex flex-column align-items-center justify-content-center">
         {{ content }}
       </div>
       {% include footer.html %}

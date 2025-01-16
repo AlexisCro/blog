@@ -3,13 +3,16 @@ disqus:
   comments: false
   disqus_shortname: 'millennial-3'
 
+# Authorize share posts on social media
+posts:
+  hide_post_share: true
+
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: ''
 
 menu:
 - {name: 'Articles',  url: 'articles'}
-- {name: 'About',     url: 'about'}
-- {name: 'Contact',   url: 'contact'}
+# - {name: 'About',   url: 'about'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:

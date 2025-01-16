@@ -4,3 +4,8 @@ posts:
     description: "How Hotwire simplify the implementation of lazy loading in Rails."
     bg-image: "lazyload-hotwire.png"
     url: "/optimizing-lazy-loading-in-rails-with-hotwire"
+  - title: "How Hotwire simplify Real-Time broadcasting in Rails"
+    date: "2025-01-13"
+    description: "Discover how Hotwire simplify the implementation of Real-Time broadcasting in Rails."
+    bg-image: "broadcasting/real-time-hotwire.png"
+    url: "/how-hotwire-simplify-real-time-broadcasting-in-rails"

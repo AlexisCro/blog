@@ -217,7 +217,7 @@ pre code {
 }
 
 .content-wrapper {
-  padding-top: 66px;
+  padding-top: 2rem;
   margin: auto;
   display: block;
   width: 1080px;
@@ -234,7 +234,7 @@ pre code {
     margin-right: auto;
   }
   .content-wrapper {
-    padding-top: 66px;
+    padding-top: 2rem;
     margin: auto;
     display: block;
     width: 95vw;

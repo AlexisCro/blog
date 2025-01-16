@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class="row gap-2 w-100 justify-content-between">
-  <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+<div class="row w-100 justify-content-between">
+  <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
     <p><img class="profile-picture" src="/assets/img/picture_profile_alexis.jpg" alt="profile picture" width="180" /></p>
     <h1 class="text-center my-2">Welcome to my blog</h1>
     <p class="text-center">
@@ -22,16 +22,16 @@ layout: default
     </p>
   </div>
 
-  <div class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
-    <h2 class="text-center my-2">What's new ?</h2>
-    <div class="container">
+  <div class="col-12 col-md-6 d-flex flex-column justify-content-start align-items-center overflow-y-scroll pt-4" style="max-height: 80vh;">
+    <h2 class="text-center my-2 pt-3">What's new ?</h2>
+    <div class="container p-0">
       <div>
         {% for post in site.data.posts.posts %}
-          <article class="text-black my-2 mt-3 d-flex flex-column justify-content-center align-items-center w-80">
+          <article class="text-black mb-4 mt-3 card p-2 d-flex flex-column justify-content-center align-items-center w-80">
             <h3 class="text-center">
               <a href="{{ post.url }}" class="text-black">
-                <p class="mb-2">{{ post.title }}</p>
-                <img src="{{ '/assets/img/posts/' | append: post.bg-image | relative_url }}">
+                <p class="mb-2 px-3 text-wrap">{{ post.title }}</p>
+                <img class="w-100" src="{{ '/assets/img/posts/' | append: post.bg-image | relative_url }}">
               </a>
             </h3>
             <p class="post-meta">
