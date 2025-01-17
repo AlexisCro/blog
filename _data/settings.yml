@@ -10,6 +10,9 @@ posts:
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: ''
 
+# domain
+domain: 'https://www.alexiscrozier.fr/'
+
 menu:
 - {name: 'Articles',  url: 'articles'}
 # - {name: 'About',   url: 'about'}
